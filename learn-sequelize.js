@@ -6,8 +6,10 @@ const { Genre, Movie, Actor } = require("./models");
   - add one more Genre of your choice
   - duplicate entries are not allowed (try it to learn about errors)
 */
-function insertNewGenre() {
+async function insertNewGenre() {
   // Add code here
+  const newGenre = await Genre.create({ Genre: "Fiction" });
+  console.log(newGenre);
 }
 
 /*
@@ -16,29 +18,40 @@ function insertNewGenre() {
   - add one more Movie of your choice.
   - the movie CANNOT be from year 2008 (try it to learn about errors)
 */
-function insertNewMovie() {
+async function insertNewMovie() {
   // Add code here
+  const newMovie = await Movie.create({ Movie: "The Last Potato" });
+  console.log(newMovie);
 }
 
 /*
   Write a function that returns the title of the movie with ID=2
 */
-function getMovieWithId2() {
+async function getMovieWithId2() {
   // Add code here
+  const foundTitle = await Movie.findAll({
+    where: {
+      ID: 2,
+    },
+  });
+  return foundTitle;
 }
 
 /*
   Write a function that returns an array of all the actor names
 */
-function getAllActors() {
+async function getAllActors() {
   // Add code here
+  const actors = await Actor.findAll();
+  return actors.map(actor => actor.name);
 }
 
 /*
   Write a function that returns an array of all the movie titles from 2008
 */
-function getAllMoviesFrom2008() {
+async function getAllMoviesFrom2008() {
   // Add code here
+  const 
 }
 
 /*

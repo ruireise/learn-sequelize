@@ -1,16 +1,16 @@
 {
   "development": {
-    "username": "ctp_user",
-    "password": "ctp_pass",
-    "database": "learn_sequelize",
-    "host": "127.0.0.1",
+    "username": "postgres",
+    "password": "9xP2mJKl_",
+    "database": "postgres",
+    "host": "localhost",
     "dialect": "postgres"
   },
   "test": {
-    "username": "ctp_user",
-    "password": "ctp_pass",
-    "database": "learn_sequelize",
-    "host": "127.0.0.1",
+    "username": "postgres",
+    "password": "9xP2mJKl_",
+    "database": "postgres",
+    "host": "localhost",
     "dialect": "postgres",
     "logging": false
   }
